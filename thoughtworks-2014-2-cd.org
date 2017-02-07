@@ -6,25 +6,33 @@ https://www.thoughtworks.com/talks/software-development-21st-century-xconf-europ
 *** series of tests for the program change 
 - deployment pipeline :: includes build, tests, deploy, integration tests, performance tests, functional tests
 *** goal of cd is that changes can go through the tests and will be good for production
+
+
 ** cd 2 meanings
 - continuous deployment :: every change is made to production (etsy)
 - continuous delivery :: can deploy, but may decide not to deploy. Choice to deploy is a bsns decision.  May decide not to deploy a change.
-** how to do cd
-*** automation of activies: build, test, deploy
-*** Automated tests needed to ensure that a change is ready for production
-**** some tests cannot be automation, there is a need for manual testing
-*** Configuration Managemant is needed.  
-**** source code
-**** db schemas
-**** server configuration
+* how to do cd
+** automation of activies: build, test, deploy
+** Automated tests needed to ensure that a change is ready for production
+*** some tests cannot be automation, there is a need for manual testing
+
+* "post" cd
+** Configuration Managemant
+*** source code
+*** db schemas
+*** server configuration
 ** devops 
 *** dev need to be aware of operations needs
 *** operations need to ensure that deployments can be 
-** CI continuous integration Tests
+
+
+* CI continuous integration Tests
 *** everyone commits to the shared mainline/trunk each day
 *** each commit builds and runs battery of tests that can detect failure
 *** if there is a test failure, it is fixed in 20 minutes.  fixing the problem has priority
-** value of ci/cd
+
+
+* value of ci/cd
 *** 1. reduce deployment risk by making smaller changes to production
 **** easier to find cause of problem if there are fewer changes to be considered
 *** 2. better concept of progress, concept of done
